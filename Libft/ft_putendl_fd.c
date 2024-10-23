@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucda-si <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 13:10:57 by lucda-si          #+#    #+#             */
-/*   Updated: 2024/10/22 22:57:11 by lucda-si         ###   ########.fr       */
+/*   Created: 2024/10/23 15:05:26 by lucda-si          #+#    #+#             */
+/*   Updated: 2024/10/23 15:05:28 by lucda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
+#include "libft.h"
+
+void	ft_putendl_fd(char *s, int fd)
 {
-	if (c >= '0' && c <= '9')
-	{
-		return (1);
-	}
-	return (0);
+	ft_putstr_fd(s, fd);
+	write (fd, "\n", 1);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
-	int	i;
-
-	i = '2';
-	printf("%d", ft_isdigit(i));
+	ft_putendl_fd("Okahua", 1);
 	return (0);
 }
 */

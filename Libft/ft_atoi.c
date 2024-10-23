@@ -43,8 +43,14 @@ int	ft_atoi(const char *str)
 /*
 int	main(void)
 {
-	char	test[] = "   -123456215";
+	char	*test = NULL;
 	printf("%d", ft_atoi(test));
 	return (0);
 }
+
+/*if (str == NULL)
+	{
+		return (0);  Verificar se o string é nulo. 
+		Arrumar um jeito de implementar noinicio.
+	}
 */

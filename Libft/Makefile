@@ -12,7 +12,7 @@
 
 NAME = libft.a
 CC = cc
-FLAGS = -Wall -Extra - Error
+CFLAGS = -Wall -Wextra -Werror
 LIB = ar rcs
 RM = rm -f
 
