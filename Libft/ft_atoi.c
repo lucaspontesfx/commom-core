@@ -48,7 +48,7 @@ int	main(void)
 	return (0);
 }
 
-/*if (str == NULL)
+if (str == NULL)
 	{
 		return (0);  Verificar se o string é nulo. 
 		Arrumar um jeito de implementar noinicio.
